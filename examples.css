@@ -1,3 +1,4 @@
+
 table {
 	border: 2px solid;
 	border-collapse: collapse;
@@ -20,6 +21,9 @@ td {
 .float-left {
 	float: left;
 }
+.float-right {
+	float: right;
+}
 .codestatement {
 	margin-left: 0px;
 	display: inline-block;
@@ -31,6 +35,9 @@ td {
 	border: 1px solid;
 	background-color: orange;
 }
+
+
+
 .tab {
 	margin-left: 8%;
 }
@@ -53,4 +60,31 @@ td {
 	border-radius: 12px;
 	border: 1px solid;
 	background-color: green;
+}
+
+.pageLink {
+
+	text-align: center;
+	width: 80px;
+	display: inline-block;
+	margin-left: 0%;
+	font-size: 20px;
+	background-color: #3c6bb7;
+	box-shadow: 0px 0px 3px 3px #1d3863;
+	border-radius: 7px;
+	border: 1px solid black;
+}
+.pageLink:hover {
+	box-shadow: 0px 0px 7px 3px #1d3863;
+}
+.linkContainer {
+	width: 95%;
+	margin: auto;
+}
+.finished {
+
+	background-color: grey;
+}
+.highlight {
+	border: 3px solid red;
 }
