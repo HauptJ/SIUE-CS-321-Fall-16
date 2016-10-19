@@ -4,12 +4,19 @@
 	text-align: center;
 }
 
-
+/*Default*/
+.{
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	background: transparent;
+}
 
 #CBHeader{
   background-color: #3c6bb7;
-  height: 12%;
+  height: 15%;
   width: 100%;
+  padding: 10px;
 }
 
 #quiz{
@@ -19,9 +26,7 @@
 /*Correct and Incorrect Divs*/
 
 #correct{
-  position: absolute;
-  left: 25%;
-  top: 50%;
+margin:auto;
   display: block;
   background-color: green;
   width: 50%;
@@ -32,9 +37,7 @@
  }
 
 #incorrect{
-  position: absolute;
-  left: 25%;
-  top: 50%;
+	margin:auto;
   display: block;
   background-color: red;
   width: 50%;
@@ -53,7 +56,7 @@ a:hover {
   font-style: bod;
 }
 a:link {
-	color: black;
+	color: cyan;
   text-decoration: none;
   font-family: Verdana;
 }
@@ -67,7 +70,16 @@ a:active {
 }
 h1 {
 	font-size: 40px;
+	color: white;
+	margin-bottom: 10px;
 }
+
+h2 {
+  color:white;
+  }
+
+
+
 /*Header css*/
 #homeIcon {
   display: inline;
@@ -91,6 +103,7 @@ h1 {
 	margin: auto;
 	width:100%;
 	font-size: 25px;
+	margin-top: 10px;
 }
 body {
     background-color: white;
@@ -102,6 +115,7 @@ body {
 nav .nav-item {
 	width: 15%;
 	height: 5%;
+	
 	text-align: center;
 	display: inline-block;
 	border-radius: 15px;
@@ -118,6 +132,7 @@ nav .nav-item {
 
 /*Menu section*/
 .menu {
+	color: white;
 	height: 60%;
 	width: 100%;
 	
@@ -137,6 +152,21 @@ nav .nav-item {
 	margin:auto;
 	text-align: center;
 }
+.quiz-header {
+	margin: auto;
+	
+	width: 40%;
+	height: 40px;
+	
+	background-color: #3c6bb7;
+	box-shadow: 0px 0px 3px 5px #1d3863;
+	border-radius: 20px;
+	
+	font-size: 24px;
+	text-align: center;
+	margin:auto;
+	text-align: center;
+}
 .menu-item {
 	margin-top: 3px;
 	
@@ -150,6 +180,7 @@ nav .nav-item {
 	margin:auto;
 	text-align: center;
 }
+
 .menu-item:hover {
 	width: 38%;
 	background-color: #335fa5;
@@ -161,6 +192,8 @@ nav .nav-item {
 	margin-top: 2.5%;
 	width: 85%;
 	background-color: lightblue;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 
@@ -170,13 +203,6 @@ nav .nav-item {
 
 }
 
-/*Default*/
-.{
-	margin: 0px;
-	border: 0px;
-	padding: 0px;
-	background: transparent;
-}
 
 /* big ideas nav bar*/
 ul {
