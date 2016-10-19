@@ -88,3 +88,23 @@ td {
 .highlight {
 	border: 3px solid red;
 }
+
+#example-index-header{
+	margin-top: 15px
+	}
+
+/*figures on abstraction example*/
+.abstraction_figures {
+    width: 25%;
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    align: center;
+}
+
+figcaption {
+    color:black;
+
