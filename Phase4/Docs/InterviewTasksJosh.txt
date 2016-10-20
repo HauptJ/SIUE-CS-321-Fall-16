@@ -1,0 +1,5 @@
+As a student, Look up course info.
+As a student, take a practice quiz.
+As a student, look up an Algorithm Analysis example.
+As a teacher, look up course material on creativity.
+As a teacher, look up course material on programming.
