@@ -1,0 +1,37 @@
+What is programming?
+Answer: A
+A.) The action or process of writing computer programs.
+B.) Bannana Creme Pie
+C.) The action or process of scheduling something.
+D.) The process of finding errors in a computer program.
+
+What is creativity?
+Answer: A and C
+A.) The use of the imagination or original ideas, especially in the production of an artistic work.
+B.) Boston Creme Pie
+C.) The ability to transcend traditional ideas, rules, patterns, relationships, or the like, and to create meaningful new ideas, forms, methods, interpretations, etc.; originality, progressiveness, or imagination.
+D.) The process of finding and resolving of defects that prevent correct operation of computer software or a system.
+
+What is computer science?
+Answer: A and B
+A.) The study of the principles and use of computers.
+B.) The study of computing, programming, and computation in correspondence with computer systems. This field of study utilizes theories on how computers work to design, test, and analyze concepts.
+C.) Cheese Cake
+D.) The study of Astrolopithicus.
+
+What is an algorithm?
+Ansswer: D
+A.) Another word for Computer Scince
+B.) A compiled computer program.
+C.) An error is a computer program.
+D.) A process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.
+
+What are 5 good steps to follow in regards to problem solving?
+Answer: B
+A.) Give up
+B.) 1.) Identify the problem. 2.) Develope alternatives. 3.) Select the best alternative. 4.) Implement. 5.) Stop if solution worked, if not, repeat process.
+C.) 1.) Use Bing to find information. 2.) Use Google to find more information. 3.) Use Yahoo to find even more information. 4.) Analyze the information you found. 5.) Come up with a plan using this information.
+D.) 1.) Ask a friend for help. 2.) Go to the library and research the problem you are faced with. 3.) Email Dr. White. 4.) Identify the problem. 5.) Implement a plan.
+
+
+

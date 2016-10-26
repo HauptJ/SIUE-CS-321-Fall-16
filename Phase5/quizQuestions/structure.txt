@@ -1,0 +1,15 @@
+User:
+	Name [VARCHAR(35) PRIMARY KEY]
+	Pass ("Password") [VARCHAR(20)]
+	Type (Teacher(0), Student(1)) [TINYINT]
+	Quiz score [TINYINT]
+
+Quiz:
+	QID [TINYINT, PRIMARY KEY]
+	Question [TEXT]
+	Answer [VARCHAR(5)]
+	ChoiceA [TEXT]
+	ChoiceB [TEXT]
+	ChoiceC [TEXT]
+	ChoiceD [TEXT]
+	
