@@ -9,7 +9,7 @@
 */
 
 //for use to build the nav chains systematically.
-$MENU_PARENT['Home'] = array();
+$MENU_PARENT = array();
 //the unique refereancable identifier
 //  ((ALSO))  the text that appears at the top of the screen, under the title bar. (CBSubHeader).
 $MENU_LABELS = array();
