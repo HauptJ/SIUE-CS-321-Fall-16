@@ -53,7 +53,7 @@ if (isset($_POST['login']) && !empty($_POST['username']) && !empty($_POST['passw
 
             // SQL query to verify is valid or not
 
-            $query = mysql_query("select * from users where Name='$username' AND  Password='$password'"	 Name='$username'", $connection);
+            $query = mysql_query("select * from users where Name='$username' AND  Password='$password'", $connection);
             $rows = mysql_num_rows($query);
             if ($rows == 1)
                 {
