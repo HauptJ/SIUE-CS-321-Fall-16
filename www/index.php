@@ -125,6 +125,10 @@
             <button class = "btn btn-lg btn-primary btn-block" type = "submit" 
                name = "login">Login</button>
          </form>
+         <?php 
+         //DEB
+         echo $username;
+         
          Click here to clean <a href = "logout.php" tite = "Logout">Session.
       </div>
    </body>

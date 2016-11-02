@@ -2,7 +2,13 @@
 
 //request is post
 if (strcmp($_SERVER['REQUEST_METHOD'],"POST") == 0) {
-	$accpt 
+	//script + all content prior to QUERY_STRING
+	$accpt = $_SERVER['HTTP_ACCEPT'];
+	
+	//the qualified location of this file local to the server directory
+	$scrpt = $_SERVER['SCRIPT_NAME'];
+
+	$diff =	substr(
 }
 
 	echo $_SERVER['PHP_SELF']."<br/>";
