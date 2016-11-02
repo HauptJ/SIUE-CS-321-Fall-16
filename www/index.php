@@ -44,10 +44,11 @@
 <html lang = "en">
    <head>
       <title>College Board</title>
-      <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet">
+      <link href = "bootstrap.min.css" rel = "stylesheet">
 			<link href = "index.css" rel = "stylesheet">
    </head>
    <body>
+   		<h2>Welcome!</h2>
       <h2>Enter Username and Password</h2>
       <div class = "container form-signin">
          <?php
@@ -61,7 +62,8 @@
                   $_SESSION['valid'] = true;
                   $_SESSION['timeout'] = time();
                   $_SESSION['username'] = 'Student';
-                  
+
+                  //Works sometimes? WTF???
                   echo 'You have entered valid use name and password';
                }else {
                   $msg = 'Wrong username or password';

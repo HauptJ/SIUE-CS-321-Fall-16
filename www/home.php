@@ -12,6 +12,8 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 
 	//which page to load
 	$content = substr($link,strlen($scrpt)+1));
+
+	
 	
 }
 
