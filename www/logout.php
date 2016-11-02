@@ -6,6 +6,6 @@
    echo 'You have cleaned session';
    header('Refresh: 2; URL = index.php');
 
-		//backup if previous autoredierct fails
+		//backup if previous auto redierct fails
    echo '<meta HTTP-EQUIV="REFRESH" content="5; url=index.php">'
 ?>
