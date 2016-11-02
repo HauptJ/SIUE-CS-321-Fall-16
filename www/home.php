@@ -12,6 +12,7 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 
 	//which page to load
 	$content = substr($link,strlen($scrpt)+1);
+	$GLOBALS['content'] = $content;
 }
 //display page contents
 
@@ -20,33 +21,24 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 ?>
 <html>  <head>    <link rel="stylesheet" type="text/css" href="style.css">  </head>
   <body>    <article class="page">      <header id="CBHeader">        <a href="index.html"><img id="homeIcon" src="icons/home.jpg" alt="home icon"></a>        <h1 id="CBHeaderText" class="center">College Board</h1>
-        <h2 id="CBSubHeaderText"><?php echo $MENU_LABELS[$content];?></h2>      </header>
+        <h2 id="CBSubHeaderText"><?php echo $MENU_MESSAGE[$content];?></h2>      </header>
 		
 
 
 		<nav>
 		<?php
+				require_once 'NavigationMap.php';
 				$stack = array();
-				$node = $PAGE_PARENT[$content];
+				$node = $MENU_PARENT[$GLOBALS['content']];
+				echo $node;
+				while ($node !== null) {
 				
-				while ($node !==null) {
 					$stack[] = $node;
-					$node = $PAGE_PARENT[$node];
+					$node = $MENU_PARENT[$node];
 				}
+				$linkchain = array_reverse($stack);
+				var_dump($linkchain);
 		?>	  </nav>
 
-
-	
-<?php
-function menuButton($link,$txt) {
-	echo "<a href='$link'><div class='menu-item center'>$txt
-		</div></a>";
-}
-
-echo menuHeader($txt,$id) {
-	return "<div class='menu-header center'>$txt</div>";
-}
-
-?>
 
 
