@@ -1,14 +1,14 @@
 <?php
 
 //request is post
-if (strcmp($_SERVER['REQUEST_METHOD'],"POST") == 0) {
+if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 	//script + all content prior to QUERY_STRING
 	$accpt = $_SERVER['HTTP_ACCEPT'];
 	
 	//the qualified location of this file local to the server directory
 	$scrpt = $_SERVER['SCRIPT_NAME'];
 	//cut the script out - all i need is the content after
-	$diff =	substr($accpt,strlen($scrpt);
+	$diff =	substr($accpt,strlen($scrpt));
 	echo $diff."<br />";
 }
 

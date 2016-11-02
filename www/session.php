@@ -5,7 +5,7 @@ $connection = mysql_connect("localhost", "ZurgUser", "");
 $db = mysql_select_db("Zurg", $connection);
 session_start();// Starting Session
 // store session
-$userCheck=$_SESSION['login_user'];
+$userCheck=$_SESSION['loginUser'];
 // fetch query to verify user info from DB
 $ses_sql=mysql_query("select Name from users where Name='$userCheck'", $connection);
 $row = mysql_fetch_assoc($ses_sql);

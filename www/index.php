@@ -36,6 +36,12 @@
    mysql_close($connection); 
    }
    }
+
+
+       //DEBUG
+      echo $username;
+   		echo $password;
+
    ?>
 <html lang = "en">
    <head>
@@ -125,11 +131,7 @@
             <button class = "btn btn-lg btn-primary btn-block" type = "submit" 
                name = "login">Login</button>
          </form>
-         <?php 
-         //DEBUG
-         echo $username;
-         ech $password;
-         ?>
+ 
          
          Click here to clean <a href = "logout.php" tite = "Logout">Session.
       </div>
