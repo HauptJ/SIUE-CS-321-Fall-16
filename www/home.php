@@ -7,8 +7,9 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"POST") == 0) {
 	
 	//the qualified location of this file local to the server directory
 	$scrpt = $_SERVER['SCRIPT_NAME'];
-
-	$diff =	substr(
+	//cut the script out - all i need is the content after
+	$diff =	substr($accpt,strlen($scrpt);
+	echo $diff."<br />";
 }
 
 	echo $_SERVER['PHP_SELF']."<br/>";
