@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-<head><title>TADA!</title></head></html>
+<head><title>College Board: Computer Science</title></head></html>
 <?php
 /*
 	Contains the navigation map for the software.

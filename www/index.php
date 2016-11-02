@@ -43,7 +43,7 @@
    ?>
 <html lang = "en">
    <head>
-      <title>College Board</title>
+      <title>College Board: Computer Science</title>
       <link href = "bootstrap.min.css" rel = "stylesheet">
 			<link href = "index.css" rel = "stylesheet">
    </head>
@@ -64,9 +64,9 @@
                   $_SESSION['username'] = 'Student';
 
                   //Works sometimes? WTF???
-                  echo 'You have entered valid use name and password';
+                  echo 'You have entered valid use name and password. If you are not logged in momentarily, there is an error with this website. Sorry';
                }else {
-                  $msg = 'Wrong username or password';
+                  $msg = 'Invalid Login: You have entered a wrong username or password';
                }
             }
             ?>
@@ -86,7 +86,7 @@
          </form>
  
          
-         Click here to clean <a href = "logout.php" tite = "Logout">Session.
+          <a href = "logout.php" tite = "Click here to reset this web application.">.
       </div>
    </body>
 </html>
