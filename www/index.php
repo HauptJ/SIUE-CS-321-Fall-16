@@ -1,11 +1,39 @@
 <?php
    ob_start();
    session_start();
-?>
 
-<?
-   // error_reporting(E_ALL);
-   // ini_set("display_errors", 1);
+	$error=''; // errors
+	if (isset($_POST['submit'])) {
+	if (empty($_POST['username']) || empty($_POST['password'])) {
+	$error = "Username or Password is invalid";
+	}
+	else
+	{
+	// Define $username and $password
+	$username=$_POST['username'];
+	$password=$_POST['password'];
+	// Connect to DB w/ username and password
+	$connection = mysql_connect("localhost", "ZurgUser", "");
+	// clean info
+	$username = stripslashes($username);
+	$password = stripslashes($password);
+	$username = mysql_real_escape_string($username);
+	$password = mysql_real_escape_string($password);
+	// Selecting Database
+	$db = mysql_select_db("Zurg", $connection);
+	// SQL query to fetch information of registerd users and finds user match.
+	$query = mysql_query("select * from users where Password='$password' AND Name='$username'", $connection);
+	$rows = mysql_num_rows($query);
+	if ($rows == 1) {
+	$_SESSION['loginUser']=$username; // Initializing Session
+	header("location: home.php"); // Redirecting To home.php
+	} 
+	else {
+	$error = "Invalid login: You entered an invalid username or password";
+	}
+	mysql_close($connection); 
+	}
+}
 ?>
 
 <html lang = "en">
