@@ -9,7 +9,7 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 	//the qualified location of this file local to the server directory
 	$scrpt = $_SERVER['SCRIPT_NAME'];
 	//cut the script out - all i need is the content after
-	$diff =	substr($link,strlen($scrpt)-1);
+	$diff =	urldecode(substr($link,strlen($scrpt)+1));
 	echo $diff."<br />";
 }
 
