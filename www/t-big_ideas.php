@@ -14,7 +14,7 @@ $frame = $_GET['topic'];
 
 switch ($frame) {
     case "Creativity":
-        echo "<iframe src="clients/treehouse/"></iframe>";
+        echo "";
         break;
     case "DataAndInfo":
         echo "Your favorite color is blue!";
