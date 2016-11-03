@@ -8,7 +8,8 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 	$GLOBALS['content'] = $content;
 }
 	if (!isset($GLOBALS['content']) || $GLOBALS['content'] == "") {
-		
+		//example was not declared
+
 	}
 //display page contents
 
