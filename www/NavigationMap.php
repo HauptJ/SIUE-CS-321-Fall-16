@@ -63,11 +63,12 @@ $MENU_LINKS["Teachers Home"] =
 
 
 
-
 /**********Examples*********/
-$LINK_TARGET["Examples"] = array("home.php","home.php");
+$LINK_TARGET["Examples"] = array("examples.php","examples.php","examples.php");
 $MENU_PARENT["Examples"] = "Students Home";
 $MENU_MESSAGE["Examples"] = "Choose an example for review";
 $MENU_LABELS["Examples"] = 
-					array("Ex-Algo1","Ex-Algo2","Ex-Algo3");
-$MENU_LINKS["Examples"] = array("Algorithm Analysis","Swapping","R");
+					array("Ex-Algo1","Ex-Swap1","Ex-Abst1");
+$MENU_LINKS["Examples"] = array("Algorithm Analysis","Swapping","Abstraction");
+
+  

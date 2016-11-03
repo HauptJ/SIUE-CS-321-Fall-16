@@ -15,8 +15,7 @@
             action = "<?php
             echo htmlspecialchars($_SERVER['PHP_SELF']);
 ?>" method = "post">
-            <h4 class = "form-signin-heading"><?php
-            /*echo $msg; */?></h4>
+            <h4 class = "form-signin-heading"></h4>
             <input type = "text" class = "form-control" 
                name = "username" placeholder = "username = Student" 
                required autofocus></br>
@@ -30,30 +29,27 @@
     $username = "";
     $password = "";
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST")
-    { 
-        if (isset($_POST['submit']))
-        {
-            if (empty($_POST['username']) || empty($_POST['password']))
-            {
-                $GLOBALS["msg"] = "Your username or password is invalid";
-            }
-            else
-            {
-                // Define $username
-                $username = ($_POST['username']);
-                if ($username == "Teacher"):
-                    header('Refresh: 2; URL = home.php?dest=TeachersHome');
-                elseif ($username == "Student"):
-                    header('Refresh: 2; URL = home.php?dest=StudentsHome');
-                else:
-                    $GLOBALS["msg"] = "Your username or password is invalid";
-            }
-      }
-  
-      
-
-
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    $username = ($_POST['username']);
+    $password = ($_POST['password']);
+    if ($username = "" || $password = "")
+    {
+        echo 'The username and / or password is / are invalid.';
+    }
+    elseif ($username == "Teacher")
+    {
+        header('Refresh: 2; URL = home.php?dest=TeachersHome');
+    }
+    elseif ($username == "Student")
+    {
+        header('Refresh: 2; URL = home.php?dest=StudentsHome');
+    }
+    else
+    {
+        echo 'The username and / or password is / are invalid.'; 
+    }
+    
+}   
 ?>
  
          

@@ -33,6 +33,35 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 					$page = number($_GET['p']);
 			}
 
+			
+			
+			
+			if ($page == -1) {
+				//fullText
+				foreach ($EX_CONTENT[$content] as $data) {
+					echo $data;
+				}
+				
+			} else {
+
+			
+				echo $EX_CONTENT[$content][$page];
+
+				echo "<br><br><div class='linkContainer'>";
+				
+				if ($page > 0) {
+					echo "<a href='?examples.php?dest=$content&p=".($page-1)."'><span class='pageLink float-left'><b>&#x2190;</b></span></a>";
+
+				}
+				if ($page < count($EX_CONTENT[$content])) {
+					echo "<a href='?examples.php?dest=$content&p=".($page+1)."'><span class='pageLink float-right'><b>&#x2192;</b></span></a>";
+				}
+			echo "</div><br/><br/>"
+			}
+
+			
+
+			
 		?>
 
 
