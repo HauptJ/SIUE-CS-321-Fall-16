@@ -1,7 +1,7 @@
 <?php
 if (strcmp($_GET['dest'],"Ex-Algo1") == 0) {
 		echo "<!DOCTYPE html><html>  <head>    <link rel='stylesheet' type='text/css' href='/css/style.css'>
-    <link rel='stylesheet' type='text/css' href='/css/examples.css'>  </head>  <body>    <article class='page'>            <header id='CBHeader'>        <a href='index.html'><img id='homeIcon' src='/icons/home.jpg' alt='home icon'></a>        <h1 id='CBHeaderText' class='center'>College Board</h1>
+    <link rel='stylesheet' type='text/css' href='/css/examples.css'>  </head>  <body>    <article class='page'>            <header id='CBHeader'>        <a href='home.php?dest=Home'><img id='homeIcon' src='/icons/home.jpg' alt='home icon'></a>        <h1 id='CBHeaderText' class='center'>College Board</h1>
         <h2 id='CBSubHeaderText'>Student</h2>      </header>	  <nav>		 <a href='./home.php?dest=Home'><div class='nav-item'>Home</div></a>
 		 <a href='./home.php?dest=Student Home'><div class='nav-item'>Student Home</div></a>
 		 <a href='./home.php?dest=Examples'><div class='nav-item'>Examples</div></a>	  </nav>
@@ -313,7 +313,7 @@ which is initially in the bottom left square of the grid and facing right.</p>
 	  </body></html>";
 } else if (strcmp($_GET['dest'],"Ex-Abst1") == 0) {
 	echo "<!DOCTYPE html><html>  <head>    <link rel='stylesheet' type='text/css' href='/css/style.css'>
-    <link rel='stylesheet' type='text/css' href='/css/examples.css'>  </head>  <body>    <article class='page'>            <header id='CBHeader'>        <a href='index.html'><img id='homeIcon' src='../icons/home.jpg' alt='home icon'></a>        <h1 id='CBHeaderText' class='center'>College Board</h1>
+    <link rel='stylesheet' type='text/css' href='/css/examples.css'>  </head>  <body>    <article class='page'>            <header id='CBHeader'>        <a href='/home.php?dest=Home'><img id='homeIcon' src='/icons/home.jpg' alt='home icon'></a>        <h1 id='CBHeaderText' class='center'>College Board</h1>
         <h2 id='CBSubHeaderText'>Student</h2>      </header>	   <nav>		 <a href='./home.php?dest=Home'><div class='nav-item'>Home</div></a>
 		 <a href='./home.php?dest=Student Home'><div class='nav-item'>Student Home</div></a>
 		 <a href='./home.php?dest=Examples'><div class='nav-item'>Examples</div></a>	  </nav>

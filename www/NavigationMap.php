@@ -41,7 +41,7 @@ $MENU_LINKS["Students Home"] = array("Course Information","Learning Resources","
 
 /******** Teacher Home********/
 
-$LINK_TARGET['Teachers Home'] = array(array("","",""),array("",""));
+$LINK_TARGET['Teachers Home'] = array(array("","",""),array("t-thinking_practices.php","t-big_ideas.php"));
 
 
 
@@ -57,7 +57,7 @@ $MENU_LABELS["Teachers Home"] =
 		
 $MENU_LINKS["Teachers Home"] = 
 		array(
-					array("Teaching Resources","Teacher-Test Link?","Teacher-Student link?"),
+					array("Teaching Resources","Teacher-Test","Teacher-Student"),
 					array("Thinking Practices","Course Topics")
 		);
 
