@@ -87,7 +87,7 @@ $EX_CONTENT["Ex-Algo1"][] = "<section class='center dialog'>
 		</div>
 <br><p>First, the value of 3 is assigned to the variable n.</p>";
 
-EX_CONTENT[2] = "<section class='center dialog'>
+$EX_CONTENT["Ex-Algo1"][] = "<section class='center dialog'>
 	<div id='code'>
 		<section class='codestatement float-left finished'>n&#x2190;3
 		</section>

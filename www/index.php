@@ -28,7 +28,7 @@
     $username = "";
     $password = "";
 
-if (isset($_POST["SUBMIT"])){
+if (isset($_POST["username"])){
     $username = ($_POST['username']);
     $password = ($_POST['password']);
     if ($username = "" || $password = "")
