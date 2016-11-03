@@ -2,8 +2,8 @@
 
 //request is post
 require_once 'ExampleMap.php';
+$content = "";
 if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
-	//script + all content prior to QUERY_STRING
 	$content = $_GET['dest'];
 	$GLOBALS['content'] = $content;
 }
@@ -31,7 +31,6 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 
 		require_once 'ExampleMap.php';
 		$content = $GLOBALS['content'];
-		echo $content;
 		
 		$page = 0;
 			if (isset($_GET['p']) and is_numeric($_GET['p'])) {
