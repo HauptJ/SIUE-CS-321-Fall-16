@@ -38,9 +38,7 @@
             else:
                 header('Refresh: 2; URL = home.php?dest=StudentsHome');
             endif;
-        }
-        endif;
-     }
+        //endif;
         
 
 
