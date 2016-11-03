@@ -1,8 +1,8 @@
 <html lang = "en">
    <head>
       <title>College Board: Computer Science</title>
-      <link href = "bootstrap.min.css" rel = "stylesheet">
-			<link href = "../css/index.css" rel = "stylesheet">
+      <link href = "/css/bootstrap.min.css" rel = "stylesheet">
+			<link href = "/css/index.css" rel = "stylesheet">
    </head>
    <body>
    		<h2>Welcome to AP Computer Science!</h2>
