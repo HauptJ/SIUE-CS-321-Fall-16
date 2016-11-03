@@ -37,15 +37,16 @@
         {
             // Define $username
             $username = $_POST['username'];
-            if $username == "Teacher";
+            if ($username == "Teacher");
             {
                 header('Refresh: 2; URL = home.php?dest=TeachersHome');
-            
+            }
             else
             {
                 header('Refresh: 2; URL = home.php?dest=StudentsHome');
             }
         }
+     }
         
 
 
