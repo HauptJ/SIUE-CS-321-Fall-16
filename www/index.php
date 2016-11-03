@@ -25,6 +25,23 @@
             <button class = "btn btn-lg btn-primary btn-block" type = "submit" 
                name = "login">Login</button>
          </form>
+
+<?php
+    if (isset($_POST['submit']))
+    {
+        if (empty($_POST['username']) || empty($_POST['password']))
+        {
+            $error = "Your username or password is invalid";
+        }
+        else
+        {
+            // Define $username
+            $username = $_POST['username'];
+        }
+        
+
+
+?>
  
          
           <a href = "logout.php" tite = "Click here to reset this web application.">.

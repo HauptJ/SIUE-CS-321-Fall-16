@@ -19,8 +19,6 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
   <body>    <article class="page">      <header id="CBHeader">        <a href="index.html"><img id="homeIcon" src="/icons/home.jpg" alt="home icon"></a>        <h1 id="CBHeaderText" class="center">College Board</h1>
         <h2 id="CBSubHeaderText"><?php echo $GLOBALS['content'];?></h2>      </header>
 		
-
-
 		<nav>
 		<?php
 				require_once 'NavigationMap.php';
@@ -34,7 +32,8 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 				}
 				$linkchain = array_reverse($stack);
 				foreach ($linkchain as $txt) {
-						echo "<a href='".$_SERVER['SCRIPT_NAME']."?dest=".$txt."'><div class='nav-item'>$txt</div></a>";
+						echo "\
+						<a href='".$_SERVER['SCRIPT_NAME']."?dest=".$txt."'><div class='nav-item'>$txt</div></a>";
 					
 				}
 		?>	  </nav>
@@ -45,6 +44,7 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 			
 				//each menu
 				for ($i=0;$i<count($MENU_MESSAGE[$content]);$i++) {
+					
 					//echo var_dump($MENU_LABELS[$content][$i]);
 					makeMenu($MENU_MESSAGE[$content][$i],$MENU_LABELS[$content][$i],$MENU_LINKS[$content][$i],$LINK_TARGET[$content][$i]);
 				}

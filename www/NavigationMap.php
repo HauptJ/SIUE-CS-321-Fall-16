@@ -65,7 +65,7 @@ $MENU_LINKS["Teachers Home"] =
 
 
 /**********Examples*********/
-$LINK_TARGET["Examples"] = array("home.php");
+$LINK_TARGET["Examples"] = array("home.php","home.php");
 $MENU_PARENT["Examples"] = "Students Home";
 $MENU_MESSAGE["Examples"] = "Choose an example for review";
 $MENU_LABELS["Examples"] = 
