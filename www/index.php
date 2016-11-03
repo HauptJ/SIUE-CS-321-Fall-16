@@ -12,8 +12,7 @@
       </div>
       <div class = "container">
          <form class = "form-signin" role = "form" 
-            action = "<?php
-            echo htmlspecialchars($_SERVER['PHP_SELF']);
+            action = "<?php htmlspecialchars($_SERVER['PHP_SELF']);
 ?>" method = "post">
             <h4 class = "form-signin-heading"></h4>
             <input type = "text" class = "form-control" 
