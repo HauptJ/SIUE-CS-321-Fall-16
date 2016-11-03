@@ -16,7 +16,7 @@
             echo htmlspecialchars($_SERVER['PHP_SELF']);
 ?>" method = "post">
             <h4 class = "form-signin-heading"><?php
-            echo $msg; ?></h4>
+            /*echo $msg; */?></h4>
             <input type = "text" class = "form-control" 
                name = "username" placeholder = "username = Student" 
                required autofocus></br>
@@ -35,7 +35,7 @@
             $username = $_POST['username'];
             if ($username == "Teacher"):
                 header('Refresh: 2; URL = home.php?dest=TeachersHome');
-            else if ($username == "Student"):
+            elseif ($username == "Student"):
                 header('Refresh: 2; URL = home.php?dest=StudentsHome');
             else:
                 $GLOBALS["msg"] = "Your username or password is invalid";

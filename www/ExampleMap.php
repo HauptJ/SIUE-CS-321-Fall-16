@@ -62,11 +62,6 @@ which is initially in the bottom left square of the grid and facing right.</p>
 		</section>
 		</div><br>
 		Control Code is shown in <span class='controlblock'>green</span>, and operations are shown in <span class='codestatement'>orange</span>, and blocks of code are shown in <span class='codeblock'>pink</span>.
-		<br><br>
-		<div class='linkContainer'>
-			<a href='example-1.html'><span class='pageLink center'><b>Full Text</b></span>
-			<a href='example-1-2.html'><span class='pageLink float-right'><b>&#x2192;</b></span></a>
-		</div>
-		<br><br>"
+		<br><br>";
 
 ?>
