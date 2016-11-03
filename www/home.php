@@ -4,24 +4,20 @@
 require_once 'NavigationMap.php';
 if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 	//script + all content prior to QUERY_STRING
-	$link = $_SERVER['PHP_SELF'];
-	
-	//the qualified location of this file local to the server directory
-	$scrpt = $_SERVER['SCRIPT_NAME'];
-	//cut the script out - all i need is the content after
-
-	//which page to load
-	$content = substr($link,strlen($scrpt)+1);
+	$content = $_GET['dest'];
 	$GLOBALS['content'] = $content;
 }
+	if (!isset($GLOBALS['content']) || $GLOBALS['content'] == "") {
+		$GLOBALS['content']='Home';
+	}
 //display page contents
 
 
 //header & title contents
 ?>
-<html>  <head>    <link rel="stylesheet" type="text/css" href="style.css">  </head>
-  <body>    <article class="page">      <header id="CBHeader">        <a href="index.html"><img id="homeIcon" src="icons/home.jpg" alt="home icon"></a>        <h1 id="CBHeaderText" class="center">College Board</h1>
-        <h2 id="CBSubHeaderText"><?php echo $MENU_MESSAGE[$content];?></h2>      </header>
+<html>  <head>    <link rel="stylesheet" type="text/css" href="/css/style.css">  </head>
+  <body>    <article class="page">      <header id="CBHeader">        <a href="index.html"><img id="homeIcon" src="/icons/home.jpg" alt="home icon"></a>        <h1 id="CBHeaderText" class="center">College Board</h1>
+        <h2 id="CBSubHeaderText"><?php echo $GLOBALS['content'];?></h2>      </header>
 		
 
 
@@ -30,15 +26,51 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 				require_once 'NavigationMap.php';
 				$stack = array();
 				$node = $MENU_PARENT[$GLOBALS['content']];
-				echo $node;
+				
 				while ($node !== null) {
 				
 					$stack[] = $node;
 					$node = $MENU_PARENT[$node];
 				}
 				$linkchain = array_reverse($stack);
-				var_dump($linkchain);
+				foreach ($linkchain as $txt) {
+						echo "<a href='".$_SERVER['SCRIPT_NAME']."?dest=".$txt."'><div class='nav-item'>$txt</div></a>";
+					
+				}
 		?>	  </nav>
 
+		<?php
+		$content = $GLOBALS['content'];
+			if (strcmp(gettype($MENU_MESSAGE[$content]),"array") == 0) {
+			
+				//each menu
+				for ($i=0;$i<count($MENU_MESSAGE[$content]);$i++) {
+					//echo var_dump($MENU_LABELS[$content][$i]);
+					makeMenu($MENU_MESSAGE[$content][$i],$MENU_LABELS[$content][$i],$MENU_LINKS[$content][$i],$LINK_TARGET[$content][$i]);
+				}
+			} else {
+					makeMenu($MENU_MESSAGE[$content],$MENU_LABELS[$content],$MENU_LINKS[$content],$LINK_TARGET[$content]);
+			}
 
 
+function makeMenu($title, $links, $items, $target) {
+
+
+	echo "\
+	<section class='menu'>";
+	echo "\
+	<div class='menu-header'>$title</div>";
+
+	
+	for ($i = 0;$i<count($items);$i++) {
+		echo "\
+		<a href='{$target[$i]}?dest={$links[$i]}'><div class='menu-item center'>$items[$i]</div></a>";
+	}
+
+
+				echo "\
+				</section>";
+}
+		?>
+
+		
