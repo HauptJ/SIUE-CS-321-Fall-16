@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     else
     {
-        echo 'The username and / or password is / are invalid.'; 
+        echo 'ERROR: The username and / or password is / are invalid.'; 
     }
     
 }   
