@@ -10,7 +10,7 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 	if (!isset($GLOBALS['content']) || $GLOBALS['content'] == "") {
 		//example was not declared
 		//we cannot do anything
-		
+		//i do not know how to handle this :l
 
 	}
 //display page contents
