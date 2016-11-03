@@ -1,6 +1,6 @@
 <?php
-
-$EXAMPLE["Ex-Algo1"][0] = "<section class='center dialog'><p>The following question uses a robot in a grid of squares. The robot is represented as a triangle, 
+$EX_NAME["Ex-Algo1"] ="Algorithm Analysis";
+$EX_CONTENT["Ex-Algo1"][0] = "<section class='center dialog'><p>The following question uses a robot in a grid of squares. The robot is represented as a triangle, 
 which is initially in the bottom left square of the grid and facing right.</p>
 		<table>
 			<tr>
