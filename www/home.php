@@ -32,7 +32,7 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 				}
 				$linkchain = array_reverse($stack);
 				foreach ($linkchain as $txt) {
-						echo "\
+						echo "
 						<a href='".$_SERVER['SCRIPT_NAME']."?dest=".$txt."'><div class='nav-item'>$txt</div></a>";
 					
 				}
@@ -56,19 +56,19 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 function makeMenu($title, $links, $items, $target) {
 
 
-	echo "\
+	echo "
 	<section class='menu'>";
-	echo "\
+	echo "
 	<div class='menu-header'>$title</div>";
 
 	
 	for ($i = 0;$i<count($items);$i++) {
-		echo "\
+		echo "
 		<a href='{$target[$i]}?dest={$links[$i]}'><div class='menu-item center'>$items[$i]</div></a>";
 	}
 
 
-				echo "\
+				echo "
 				</section>";
 }
 		?>

@@ -27,21 +27,31 @@
          </form>
 
 <?php
-    if (isset($_POST['submit']))
-        if (empty($_POST['username']) || empty($_POST['password']))
-            $GLOBALS["msg"] = "Your username or password is invalid";
-        else
-            // Define $username
-            $username = $_POST['username'];
-            if ($username == "Teacher"):
-                header('Refresh: 2; URL = home.php?dest=TeachersHome');
-            elseif ($username == "Student"):
-                header('Refresh: 2; URL = home.php?dest=StudentsHome');
-            else:
+    $username = "";
+    $password = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    { 
+        if (isset($_POST['submit']))
+        {
+            if (empty($_POST['username']) || empty($_POST['password']))
+            {
                 $GLOBALS["msg"] = "Your username or password is invalid";
-            endif;
-        //endif;
-        
+            }
+            else
+            {
+                // Define $username
+                $username = ($_POST['username']);
+                if ($username == "Teacher"):
+                    header('Refresh: 2; URL = home.php?dest=TeachersHome');
+                elseif ($username == "Student"):
+                    header('Refresh: 2; URL = home.php?dest=StudentsHome');
+                else:
+                    $GLOBALS["msg"] = "Your username or password is invalid";
+            }
+      }
+  
+      
 
 
 ?>
