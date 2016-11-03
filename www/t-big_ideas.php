@@ -15,8 +15,7 @@ $frame = $_GET['topic'];
 switch ($frame) {
     case "Creativity":
         echo '<h1 class="center" id ="data_and_info_header" align="center">Show students these, and then ask for other examples of creatity in real life and how they precieve being creative.</h1>';
-        echo '<iframe src="https://www.ted.com/topics/creativity" width="100%" height="750" seamless">
-              <p>Your browser does not support iframes.</p></iframe>';
+        echo '<a href="https://www.ted.com/topics/creativity">TED Creativity Series</a>';
         break;
     case "DataAndInfo":
         echo '<h1 class="center" id ="data_and_info_header" align="center">Show students this video about the differences between data, information and knowledge.</h1>
@@ -52,8 +51,7 @@ switch ($frame) {
         echo "<br></br>"; //double line break
         echo "<h1>Creativity</h1>";
         echo '<h1 class="center" id ="data_and_info_header" align="center">Show students these, and then ask for other examples of creatity in real life and how they precieve being creative.</h1>';
-        echo '<iframe src="https://www.ted.com/topics/creativity" width="100%" height="750" seamless">
-              <p>Your browser does not support iframes.</p></iframe>';
+        echo '<a href="https://www.ted.com/topics/creativity">TED Creativity Series</a>';
 
 				echo "<br></br>"; //double line break
         echo "<h1>Data and Information</h1>";
