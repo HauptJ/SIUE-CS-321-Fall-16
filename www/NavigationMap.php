@@ -31,7 +31,7 @@ $MENU_LINKS['Home'] = array("Teacher","Student");
 
 /******** Student Home********/
 
-$LINK_TARGET['Students Home'] = array("","","quiz.php","home.php");
+$LINK_TARGET['Students Home'] = array("","","practice_quiz.php","home.php");
 
 
 $MENU_PARENT["Students Home"] = "Home";

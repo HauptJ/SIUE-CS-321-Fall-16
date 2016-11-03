@@ -23,7 +23,7 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
         <h2 id="CBSubHeaderText"><?php echo $EX_NAME[$GLOBALS['content']];?></h2>      </header>
 		
 		<nav>		 <a href="./home.php?dest=Home"><div class="nav-item">Home</div></a>
-		 <a href="./home.php?dest=Students Home"><div class="nav-item">Student</div></a>
+		 <a href="./home.php?dest=Students Home"><div class="nav-item">Students Home</div></a>
 		 <a href="./home.php?dest=Examples"><div class="nav-item">Examples</div></a>	  </nav>
 
 		
@@ -56,12 +56,12 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 				if ($page < count($EX_CONTENT[$content])) {
 					echo "<a href='?examples.php?dest=$content&p=".($page+1)."'><span class='pageLink float-right'><b>&#x2192;</b></span></a>";
 				}
-			echo "</div><br/><br/>"
+			echo "</div><br/><br/>";
+			
+
+			
+
 			}
-
-			
-
-			
 		?>
 
 

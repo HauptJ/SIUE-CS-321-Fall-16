@@ -18,6 +18,8 @@
         <h1 id="CBHeaderText">Quiz Grade</h1>
     </header>
 
+
+
     <nav>      <a href="home.php"><div class="nav-item">Home</div></a>
       <a href="student.html"><div class="nav-item">Student</div></a>
       <a href="practice_quiz.php"><div class="nav-item">Quiz</div></a>
