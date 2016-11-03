@@ -15,10 +15,10 @@
             method="post" action ="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <h4 class = "form-signin-heading"></h4>
             <input type = "text" class = "form-control" 
-               name = "username" placeholder = "username = Student" 
+               name = "username" placeholder = "Your Username" 
                required autofocus></br>
             <input type = "password" class = "form-control"
-               name = "password" placeholder = "password = password" required>
+               name = "password" placeholder = "Your Password" required>
             <button class = "btn btn-lg btn-primary btn-block" type = "submit" 
                name = "login">Login</button>
          </form>
