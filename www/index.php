@@ -12,8 +12,7 @@
       </div>
       <div class = "container">
          <form class = "form-signin" role = "form" 
-            action = "<?php htmlspecialchars($_SERVER['PHP_SELF']);
-?>" method = "post">
+            method="post" action ="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <h4 class = "form-signin-heading"></h4>
             <input type = "text" class = "form-control" 
                name = "username" placeholder = "username = Student" 
@@ -28,7 +27,7 @@
     $username = "";
     $password = "";
 
-if (isset($_POST["username"])){
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $username = ($_POST['username']);
     $password = ($_POST['password']);
     if ($username = "" || $password = "")

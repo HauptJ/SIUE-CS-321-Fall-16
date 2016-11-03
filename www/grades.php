@@ -19,9 +19,8 @@
     </header>
 
 
-
-    <nav>      <a href="home.php"><div class="nav-item">Home</div></a>
-      <a href="student.html"><div class="nav-item">Student</div></a>
+    <nav>      <a href="./home.php?dest=Home"><div class="nav-item">Home</div></a>
+      <a href="./home.php?dest=Students Home"><div class="nav-item">Students Home</div></a>
       <a href="practice_quiz.php"><div class="nav-item">Quiz</div></a>
     </nav>
 

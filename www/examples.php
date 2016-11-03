@@ -28,8 +28,13 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 
 		
 		<?php
+
+		require_once 'ExampleMap.php';
+		$content = $GLOBALS['content'];
+		echo $content;
+		
 		$page = 0;
-			if (isset($_GET['p']) and numeric($_GET['p'])) {
+			if (isset($_GET['p']) and is_numeric($_GET['p'])) {
 					$page = number($_GET['p']);
 			}
 
