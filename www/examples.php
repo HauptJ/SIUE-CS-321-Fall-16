@@ -29,7 +29,7 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 		
 		<?php
 		$page = 0;
-			if (isset($_GET['p']) && isnumber($_GET['p'])) {
+			if (isset($_GET['p']) and numeric($_GET['p'])) {
 					$page = number($_GET['p']);
 			}
 
