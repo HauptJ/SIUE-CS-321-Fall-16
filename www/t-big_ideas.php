@@ -69,7 +69,7 @@ switch ($frame) {
         break;
     default: //FAILBACK
         echo "<p>This error is due to a bug in the application. Normally a frame should load here with information on the desired course topic.<p>";
-        echo "<p>Below is a fail back containing all of the information presented.<p>";
+        /*echo "<p>Below is a fail back containing all of the information presented.<p>";
         echo "<p>Plese choose the topic you would like to learn more about.<p>";
 
 
@@ -109,7 +109,7 @@ switch ($frame) {
 				echo "<br></br>"; //double line break
         echo "<h1>The Internet</h1>";
 	      echo '<h1 class="center" id ="data_and_info_header" align="center">Show students this video about the history of the Internet.</h1>
-	            <iframe width="1280" height="720" src="https://www.youtube.com/embed/9hIQjrMHTv4" frameborder="0" allowfullscreen></iframe>';
+	            <iframe width="1280" height="720" src="https://www.youtube.com/embed/9hIQjrMHTv4" frameborder="0" allowfullscreen></iframe>';*/
 }
 ?> 
 
