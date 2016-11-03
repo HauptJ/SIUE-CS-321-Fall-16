@@ -36,8 +36,8 @@ $LINK_TARGET['Students Home'] = array("","","practice_quiz.php","home.php");
 
 $MENU_PARENT["Students Home"] = "Home";
 $MENU_MESSAGE["Students Home"] = "What are you looking for?";
-$MENU_LABELS["Students Home"] = array("Course Information","Learning Resources","Practice Exam","Examples");
-$MENU_LINKS["Students Home"] = array("Course Information","Learning Resources","Test Preperation","Examples");
+$MENU_LABELS["Students Home"] = array("Practice Exam","Examples");
+$MENU_LINKS["Students Home"] = array("Test Preperation","Examples");
 
 /******** Teacher Home********/
 
@@ -51,14 +51,14 @@ $MENU_MESSAGE["Teachers Home"] = array("What are you looking for?","Course Mater
 
 $MENU_LABELS["Teachers Home"] = 
 		array(
-					array("Teaching Resources","Tests","Students"),
-					array("Thinking Practices","Course Topics")
+					array(,"Tests","Students"),
+					array(,"Course Topics")
 		);
 		
 $MENU_LINKS["Teachers Home"] = 
 		array(
-					array("Teaching Resources","Teacher-Test","Teacher-Student"),
-					array("Thinking Practices","Course Topics")
+					array("Practice-Quiz","Teacher-Student"),
+					array("Course Topics")
 		);
 
 
@@ -68,7 +68,7 @@ $LINK_TARGET["Examples"] = array("examples.php","examples.php","examples.php");
 $MENU_PARENT["Examples"] = "Students Home";
 $MENU_MESSAGE["Examples"] = "Choose an example for review";
 $MENU_LABELS["Examples"] = 
-					array("Ex-Algo1","Ex-Swap1","Ex-Abst1");
-$MENU_LINKS["Examples"] = array("Algorithm Analysis","Swapping","Abstraction");
+					array("Ex-Algo1","Ex-Abst1");
+$MENU_LINKS["Examples"] = array("Algorithm Analysis","Abstraction");
 
   
