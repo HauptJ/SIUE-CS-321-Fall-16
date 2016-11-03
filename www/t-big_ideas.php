@@ -14,30 +14,79 @@ $frame = $_GET['topic'];
 
 switch ($frame) {
     case "Creativity":
-        echo "";
+        echo '<h1 class="center" id ="data_and_info_header" align="center">Show students these, and then ask for other examples of creatity in real life and how they precieve being creative.</h1>';
+        echo '<iframe src="https://www.ted.com/topics/creativity" width="100%" height="750" seamless">
+              <p>Your browser does not support iframes.</p></iframe>';
         break;
     case "DataAndInfo":
-        echo "Your favorite color is blue!";
+        echo '<h1 class="center" id ="data_and_info_header" align="center">Show students this video about the differences between data, information and knowledge.</h1>
+	            <iframe width="1280" height="720" src="https://www.youtube.com/embed/mUgEgkV16Bw" frameborder="0" allowfullscreen></iframe>';
         break;
     case "Alorithms":
-        echo "Your favorite color is green!";
+        echo '<h1 class="center" id ="data_and_info_header" align="center"> Have your students try this Kahn Acadamy course on Algorithms. You may want to show the videos to your class first.</h1>';
+		    echo '<iframe src="https://www.khanacademy.org/computing/computer-science/algorithms" width="100%" height="750" seamless">
+              <p>Your browser does not support iframes.</p></iframe>';
         break;
     case "GlobalImpact":
         echo '<h1 class="center" id ="data_and_info_header" align="center"> After discussing this article with the class, have them list the pros and cons of how computer science has affected the world.</h1>';
 		    echo '<iframe src="http://www.wisenepali.com/2014/11/positive-and-negative-impact-of.html" width="100%" height="750" seamless">
-      <p>Your browser does not support iframes.</p></iframe>';
+              <p>Your browser does not support iframes.</p></iframe>';
         break;
     case "Abstraction":
-        echo "Your favorite color is green!";
+        echo '<h1 class="center" id ="data_and_info_header" align="center">Show students this video, about abstraction and how it relates to Computer Science.</h1>
+	            <iframe width="1280" height="720" src="https://www.youtube.com/embed/p7nGcY73epw" frameborder="0" allowfullscreen></iframe>';
         break;
     case "Programming":
-        echo "Your favorite color is green!";
+        echo '<h1 class="center" id ="data_and_info_header" align="center">Have your students play around with Scratch so they can gain a basic understanding of programming.</h1>';
+        echo '<iframe src="https://scratch.mit.edu/" width="100%" height="750" seamless">
+              <p>Your browser does not support iframes.</p></iframe>';
         break;
     case "Internet":
-        echo "Your favorite color is green!";
+        echo '<h1 class="center" id ="data_and_info_header" align="center">Show students this video about the history of the Internet.</h1>
+	            <iframe width="1280" height="720" src="https://www.youtube.com/embed/9hIQjrMHTv4" frameborder="0" allowfullscreen></iframe>';
         break;
     default:
-        echo "Your favorite color is neither red, blue, nor green!";
+        echo "<p>This error is due to a bug in the application. Normally a frame should load here with information on the desired course topic.<p>";
+        echo "<p>Plese choose the topic you would like to learn more about.<p>";
+
+        echo "<br></br>"; //double line break
+        echo "<h1>Creativity</h1>";
+        echo '<h1 class="center" id ="data_and_info_header" align="center">Show students these, and then ask for other examples of creatity in real life and how they precieve being creative.</h1>';
+        echo '<iframe src="https://www.ted.com/topics/creativity" width="100%" height="750" seamless">
+              <p>Your browser does not support iframes.</p></iframe>';
+
+				echo "<br></br>"; //double line break
+        echo "<h1>Data and Information</h1>";
+        echo '<h1 class="center" id ="data_and_info_header" align="center">Show students this video about the differences between data, information and knowledge.</h1>
+	            <iframe width="1280" height="720" src="https://www.youtube.com/embed/mUgEgkV16Bw" frameborder="0" allowfullscreen></iframe>';
+
+				echo "<br></br>"; //double line break
+	      echo "<h1>Algorithms</h1>";
+	      echo '<h1 class="center" id ="data_and_info_header" align="center"> Have your students try this Kahn Acadamy course on Algorithms. You may want to show the videos to your class first.</h1>';
+		    echo '<iframe src="https://www.khanacademy.org/computing/computer-science/algorithms" width="100%" height="750" seamless">
+              <p>Your browser does not support iframes.</p></iframe>';
+
+				echo "<br></br>"; //double line break
+        echo "<h1>Global Impact</h1>";
+        echo '<h1 class="center" id ="data_and_info_header" align="center"> After discussing this article with the class, have them list the pros and cons of how computer science has affected the world.</h1>';
+		    echo '<iframe src="http://www.wisenepali.com/2014/11/positive-and-negative-impact-of.html" width="100%" height="750" seamless">
+              <p>Your browser does not support iframes.</p></iframe>';
+
+				echo "<br></br>"; //double line break
+        echo "<h1>Abstraction</h1>";
+        echo '<h1 class="center" id ="data_and_info_header" align="center">Show students this video, about abstraction and how it relates to Computer Science.</h1>
+	            <iframe width="1280" height="720" src="https://www.youtube.com/embed/p7nGcY73epw" frameborder="0" allowfullscreen></iframe>';
+
+				echo "<br></br>"; //double line break
+	      echo "<h1>Programming</h1>";
+        echo '<h1 class="center" id ="data_and_info_header" align="center">Have your students play around with Scratch so they can gain a basic understanding of programming.</h1>';
+        echo '<iframe src="https://scratch.mit.edu/" width="100%" height="750" seamless">
+              <p>Your browser does not support iframes.</p></iframe>';
+
+				echo "<br></br>"; //double line break
+        echo "<h1>The Internet</h1>";
+	      echo '<h1 class="center" id ="data_and_info_header" align="center">Show students this video about the history of the Internet.</h1>
+	            <iframe width="1280" height="720" src="https://www.youtube.com/embed/9hIQjrMHTv4" frameborder="0" allowfullscreen></iframe>';
 }
 ?> 
 
