@@ -31,12 +31,20 @@
     {
         if (empty($_POST['username']) || empty($_POST['password']))
         {
-            $error = "Your username or password is invalid";
+            $$GLOBALS["msg"] = "Your username or password is invalid";
         }
         else
         {
             // Define $username
             $username = $_POST['username'];
+            if $username == "Teacher";
+            {
+                header('Refresh: 2; URL = home.php?dest=TeachersHome');
+            
+            else
+            {
+                header('Refresh: 2; URL = home.php?dest=StudentsHome');
+            }
         }
         
 

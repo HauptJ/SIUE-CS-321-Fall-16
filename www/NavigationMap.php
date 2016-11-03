@@ -1,20 +1,20 @@
-<!DOCTYPE HTML>
-<html>
-<head><title>College Board: Computer Science</title></head></html>
+
 <?php
+
+//For navigation
+$LINK_TARGET = array();
 /*
 	Contains the navigation map for the software.
 	Each object is a "menu" and each element to that object are the links which that menu takes you too.
 	>>If this were to be the same for multiple pages, it could be confusing.
 */
-//For navigation
-$LINK_TARGET = array();
-
 //for use to build the nav chains systematically.
 $MENU_PARENT = array();
-//the unique refereancable identifier
+//the unique refereancable identifier (?dest=THISVALUE)
 //  ((ALSO))  the text that appears at the top of the screen, under the title bar. (CBSubHeader).
 $MENU_LABELS = array();
+
+//this is the text that appears for each of the links
 $MENU_LINKS = array();
 //The text that is shown in the dialogue box. (Question portion of the menu)
 $MENU_MESSAGE = array();
@@ -31,7 +31,7 @@ $MENU_LINKS['Home'] = array("Teacher","Student");
 
 /******** Student Home********/
 
-$LINK_TARGET['Students Home'] = array("","","","home.php");
+$LINK_TARGET['Students Home'] = array("","","quiz.php","home.php");
 
 
 $MENU_PARENT["Students Home"] = "Home";
