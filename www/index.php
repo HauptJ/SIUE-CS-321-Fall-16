@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $password = ($_POST['password']);
     if ($username = "" || $password = "")
     {
-        echo 'The username and / or password is / are invalid.';
+        echo 'Error: The username and / or password is / are invalid.';
     }
     elseif ($username == "Teacher")
     {

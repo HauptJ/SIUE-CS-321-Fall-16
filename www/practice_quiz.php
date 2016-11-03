@@ -12,7 +12,7 @@
     <div id= "page">
 
     <header id="CBHeader">
-        <a href="home.php"><img id="homeIcon" src="icons/home.jpg" alt="home icon"></a>
+        '<a href="./home.php?dest=Home"><div class="nav-item">Home</div></a>';
         <h1 id="CBHeaderText">Test Preparation</h1>
     </header>
 

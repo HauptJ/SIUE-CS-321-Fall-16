@@ -2,6 +2,7 @@
 
 //request is post
 require_once 'NavigationMap.php';
+$content = "";
 if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 	//script + all content prior to QUERY_STRING
 	$content = $_GET['dest'];
@@ -16,12 +17,15 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 //header & title contents
 ?>
 <html>  <head>    <link rel="stylesheet" type="text/css" href="/css/style.css">  </head>
-  <body>    <article class="page">      <header id="CBHeader">        <a href="index.html"><img id="homeIcon" src="/icons/home.jpg" alt="home icon"></a>        <h1 id="CBHeaderText" class="center">College Board</h1>
+  <body>    <article class="page">      <header id="CBHeader">        <a href="home.php?dest=Home"><img id="homeIcon" src="/icons/home.jpg" alt="home icon"></a>        <h1 id="CBHeaderText" class="center">College Board</h1>
         <h2 id="CBSubHeaderText"><?php echo $GLOBALS['content'];?></h2>      </header>
 		
 		<nav>
 		<?php
 				require_once 'NavigationMap.php';
+
+
+				
 				$stack = array();
 				$node = $MENU_PARENT[$GLOBALS['content']];
 				
@@ -40,6 +44,12 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 
 		<?php
 		$content = $GLOBALS['content'];
+
+		if (isset($LINK_TARGET[$content]) == false) {
+		echo"<section class='dialog center'><div class='center'>I'm sorry but the page you requested could not be found. If you believe this is an error, please contact the server admins.</div></section>";
+
+
+} else {
 			if (strcmp(gettype($MENU_MESSAGE[$content]),"array") == 0) {
 			
 				//each menu
@@ -51,7 +61,7 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 			} else {
 					makeMenu($MENU_MESSAGE[$content],$MENU_LABELS[$content],$MENU_LINKS[$content],$LINK_TARGET[$content]);
 			}
-
+}
 
 function makeMenu($title, $links, $items, $target) {
 
