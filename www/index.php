@@ -36,16 +36,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     elseif ($username == "Teacher")
     {
-        header('Refresh: 2; URL = home.php?dest=TeachersHome');
+        header('Refresh: 2; URL = home.php?dest=Teachers Home');
     }
     elseif ($username == "Student")
     {
-        header('Refresh: 2; URL = home.php?dest=StudentsHome');
+        header('Refresh: 2; URL = home.php?dest=Students Home');
     }
     else
     {
         echo 'ERROR: The username and / or password is / are invalid.'; 
-        echo 'This may be caused by a bug in this form: If so, please choose your status: <a href="home.php?dest=TeachersHome">Teacher</a> or <a href="home.php?dest=StudentsHome">Student</a>';
+        echo '<p>This may be caused by a bug in this form: If so, please choose your status: <a href="home.php?dest=Teachers Home">Teacher</a> or <a href="home.php?dest=Students Home">Student</a> Sorry for the nconvenience. ';
     }
     
 }   
