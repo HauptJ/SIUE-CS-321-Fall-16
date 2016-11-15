@@ -1,0 +1,83 @@
+* {
+    margin:5px;
+    padding:0;
+
+    }
+
+
+#CBHeader{  background-color: #3c6bb7;
+  height: 15%;
+  width: 100%;
+  padding: 10px;
+  margin-right: 5px;}
+
+#CBHeaderText {
+  margin:auto;
+  margin-bottom: .2%;
+  display: inline-block;  text-align: center;
+  width: 80%;
+  height: 0px;
+  color: white; }
+#homeIcon {
+  display: inline;  text-align: left;
+  width     : 10%;
+  height    : 10%;}
+
+/*Nav Section*/nav .nav-item {	width: 15%;	height: 5%;
+
+	font-size: 18px;
+	color: aqua;
+	text-align: center;
+	display: inline-block;	border-radius: 15px;	background-color: #3c6bb7;	box-shadow: 0px 0px 3px 6px #1d3863;
+	margin-top: 1%;
+	margin-left: .5%;}.nav-item:hover {		background-color: #335fa5;	box-shadow: 0px 0px 12px 7px #1d3863;}
+
+body {
+     font: 14px
+     }
+
+#page {
+     margin: 0 auto;
+     }
+
+
+h1 {
+    margin: 25px 0;
+    }
+
+#quiz input {
+    vertical-align: middle;
+    }
+
+#quiz ol {
+    margin: 0 0 10px 20px;
+    }
+
+#quiz ol li{
+    margin: 0 0 20px 0;
+    }
+
+#quiz ol li div {
+    padding: 4px 0;
+    }
+
+#quiz h3 {
+    font-size: 17px;
+    margin: 0 0 1px 0;
+    color: #666;
+    }
+
+#results{
+    font-size: 100px;
+    text-align: center;
+    }
+
+#submit{
+   	width: 15%;	height: 5%;
+
+	font-size: 18px;
+	color: aqua;
+	text-align: center;
+	display: inline-block;	border-radius: 15px;	background-color: #3c6bb7;	box-shadow: 0px 0px 3px 6px #1d3863;
+	margin-top: 1%;
+	margin-left: .5%;}

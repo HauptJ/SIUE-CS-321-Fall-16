@@ -18,13 +18,13 @@
 	  </nav>
 	  <section class="menu">
 	    <div class="menu-header" id="big_idea" >Select a topic!</div>
-		  <a href="t-big_ideas_frames.html"><div class="menu-item center">Creativity</div></a>
-		  <a href="t-big_ideas_data_and_information.html"><div class="menu-item center">Data and Information</div></a>
-		  <a href="t-big_ideas_algorithms.html"><div class="menu-item center">Algorithms</div></a>
-		  <a href="t-big_ideas_global_impact.html"><div class="menu-item center">Global Impact</div></a>
-		  <a href="t-big_ideas_abstraction.html"><div class="menu-item center">Abstraction</div></a>
-		  <a href="t-prog-topic.html"><div class="menu-item center">Programming</div></a>
-		  <a href="t-big_ideas_internet.html"><div class="menu-item center">The Internet</div></a>
+		  <a href="/t-big_ideas.php?dest=Course Topics?topic=Creativity"><div class="menu-item center">Creativity</div></a>
+		  <a href="/t-big_ideas.php?dest=Course Topics?topic=DataAndInfo"><div class="menu-item center">Data and Information</div></a>
+		  <a href="/t-big_ideas.php?dest=Course Topics?topic=Alorithms"><div class="menu-item center">Algorithms</div></a>
+		  <a href="/t-big_ideas.php?dest=Course Topics?topic=GlobalImpact"><div class="menu-item center">Global Impact</div></a>
+		  <a href="/t-big_ideas.php?dest=Course Topics?topic=Abstraction"><div class="menu-item center">Abstraction</div></a>
+		  <a href="/t-big_ideas.php?dest=Course Topics?topic=Programming"><div class="menu-item center">Programming</div></a>
+		  <a href="/t-big_ideas.php?dest=Course Topics?topic=Internet"><div class="menu-item center">The Internet</div></a>
 	  </section>
 		<section class="dialog center">
 			<p>Important topics related to Computer Science.
@@ -34,6 +34,7 @@
 		<section id="iframe">
  <?php
 $frame = $_GET['topic'];
+
 switch ($frame) {
     case "Creativity":
         echo '<h1 class="center" id ="data_and_info_header" align="center">Show students these, and then ask for other examples of creatity in real life and how they precieve being creative.</h1>';

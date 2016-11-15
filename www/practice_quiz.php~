@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+    <title> Practice Quiz </title>
+
+    <link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+  </head>
+
+  <body>
+  
+    <div id= "page">
+
+    <header id="CBHeader">
+        <a href="index.html"><img id="homeIcon" src="home.jpg" alt="home icon"></a>
+        <h1 id="CBHeaderText">Test Preparation</h1>
+    </header>
+
+<?php
+$hostname = "localhost";
+$username = "ZurgUser";
+$password = "Dr4g0n!3";
+ 
+try {
+    $dbh = new PDO("mysql:host=$hostname;dbname=Zurg", $username, $password);
+    echo "Connected to database"; // check for connection
+    }
+catch(PDOException $e)
+    {
+    echo $e->getMessage();
+    }
+
+   foreach($connection->query('SELECT * FROM quiz WHERE QuestionID=1') as $row) {
+   echo $row['QuestionID'] . ' ' . $row['Question'];
+}
+    
+?> 
+
+	  <nav>
+		 <a href="index.html"><div class="nav-item">Home</div></a>
+		 <a href="student.html"><div class="nav-item">Student</div></a>
+	  </nav>
+
+      <form action = "grades.php" method ="post" id="quiz">
+
+        <ol>
+          <li>
+            <h3>What is programming?</h3>
+
+            <div>
+              <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+               <label for="question-1-answers-A">A.) The action or process of writing computer programs. </label>
+            </div>
+
+            <div>
+              <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+               <label for="question-1-answers-B">B.) Bannana Creme Pie</label>
+            </div>
+
+            <div>
+             <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+             <label for="question-1-answers-C">C.) The action or process of scheduling something.</label>
+            </div>
+
+            <div>
+              <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+              <label for="question-1-answers-D">D.) The process of finding errors in a computer program.</label>
+            </div>
+            
+          </li>
+
+          <li>
+                
+                    <h3>What is creativity?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                        <label for="question-2-answers-A">A.) The use of the imagination or original ideas, especially in the production of an artistic work.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                        <label for="question-2-answers-B">B.) Boston Creme Pie</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+                        <label for="question-2-answers-C">C.) The ability to transcend traditional ideas, rules, patterns, relationships, or the like, and to create meaningful new ideas, forms, methods, interpretations, etc.; originality, progressiveness, or imagination.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
+                        <label for="question-2-answers-D">D.) The process of finding and resolving of defects that prevent correct operation of computer software or a system.</label>
+                    </div>
+                
+        </li>
+
+        <li>
+                
+                    <h3>What is computer science?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+                        <label for="question-3-answers-A">A.) The study of the principles and use of computers.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+                        <label for="question-3-answers-B">B.) The study of computing, programming, and computation in correspondence with computer systems. This field of study utilizes theories on how computers work to design, test, and analyze concepts.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+                        <label for="question-3-answers-C">C.) Cheese Cake</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
+                        <label for="question-3-answers-D">D.) The study of Astrolopithicus.</label>
+                    </div>
+                
+        </li>
+
+        <li>
+                
+                    <h3>What is an algorithm?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+                        <label for="question-4-answers-A">A.) Another word for Computer Scince</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+                        <label for="question-4-answers-B">B.) A compiled computer program.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+                        <label for="question-4-answers-C">C.) An error is a computer program.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
+                        <label for="question-4-answers-D">D.) A process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.</label>
+                    </div>
+                
+         </li>
+
+         <li>
+                
+                    <h3>What are 5 good steps to follow in regards to problem solving?s</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A.) Give up</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B.) 1.) Identify the problem. 2.) Develope alternatives. 3.) Select the best alternative. 4.) Implement. 5.) Stop if solution worked, if not, repeat process.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C.) 1.) Use Bing to find information. 2.) Use Google to find more information. 3.) Use Yahoo to find even more information. 4.) Analyze the information you found. 5.) Come up with a plan using this information.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D.) 1.) Ask a friend for help. 2.) Go to the library and research the problem you are faced with. 3.) Email Dr. White. 4.) Identify the problem. 5.) Implement a plan.</label>
+                    </div>
+                
+         </li>
+         
+       </ol>
+
+       <input type="submit" value="Submit Quiz"/>
+
+     </form>
+     
+   </div>
+
+ </body> 
+  
+</html>

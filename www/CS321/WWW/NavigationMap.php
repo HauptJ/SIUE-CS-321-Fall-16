@@ -31,31 +31,33 @@ $MENU_LINKS['Home'] = array("Teacher","Student");
 
 /******** Student Home********/
 
-$LINK_TARGET['Students Home'] = array("s-course-description.html","practice_quiz.php","home.php");
+$LINK_TARGET['Students Home'] = array("","","practice_quiz.php","home.php");
 
 
 $MENU_PARENT["Students Home"] = "Home";
 $MENU_MESSAGE["Students Home"] = "What are you looking for?";
-$MENU_LABELS["Students Home"] = array("Course Information","Practice Exam","Examples");
-$MENU_LINKS["Students Home"] = array("Course Information","Test Preperation","Examples");
+$MENU_LABELS["Students Home"] = array("Course Information","Learning Resources","Practice Exam","Examples");
+$MENU_LINKS["Students Home"] = array("Course Information","Learning Resources","Test Preperation","Examples");
 
 /******** Teacher Home********/
 
-$LINK_TARGET['Teachers Home'] = array(array("t-thinking_practices.php","t-big_ideas.php"));
+$LINK_TARGET['Teachers Home'] = array(array("","",""),array("t-thinking_practices.php","t-big_ideas.php"));
 
 
 
 $MENU_PARENT["Teachers Home"] = "Home";
-$MENU_MESSAGE["Teachers Home"] = array("Course Materials");
+$MENU_MESSAGE["Teachers Home"] = array("What are you looking for?","Course Materials");
 
 
 $MENU_LABELS["Teachers Home"] = 
 		array(
-					array("Thinking Practices",null)
+					array("Teaching Resources","Tests","Students"),
+					array("Thinking Practices","Course Topics")
 		);
 		
 $MENU_LINKS["Teachers Home"] = 
 		array(
+					array("Teaching Resources","Teacher-Test","Teacher-Student"),
 					array("Thinking Practices","Course Topics")
 		);
 

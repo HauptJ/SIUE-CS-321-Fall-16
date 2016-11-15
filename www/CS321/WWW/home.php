@@ -37,7 +37,7 @@ if (strcmp($_SERVER['REQUEST_METHOD'],"GET") == 0) {
 				$linkchain = array_reverse($stack);
 				foreach ($linkchain as $txt) {
 						echo "
-						<a href='".$_SERVER['SCRIPT_NAME'].(isset($txt) ? "?dest=".$txt : "")."'><div class='nav-item'>$txt</div></a>";
+						<a href='".$_SERVER['SCRIPT_NAME']."?dest=".$txt."'><div class='nav-item'>$txt</div></a>";
 					
 				}
 		?>	  </nav>
